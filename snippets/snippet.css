@@ -1,0 +1,72 @@
+/* improve the readability -------------------------------------------------- */
+body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {
+  margin: 0;
+}
+.wrapper {
+  min-width: 600px;
+  padding: 50px 15%;
+}
+article {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+article .left {
+  float: left;
+  width: 50%;
+}
+article .right {
+  float: right;
+  width: 40%;
+  min-height: 20px;
+  padding: 20px;
+  border: #ccc solid 1px;
+  margin-top: 1em;
+}
+article p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* snippet ------------------------------------------------------------------ */
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+.clearfix{
+  *zoom:1;/*ie6,7*/
+}
+/* inline-block */
+.dib-wrap {
+  font-size:0;/* 所有浏览器 */
+  *word-spacing:-1px;/* IE6、7 */
+}
+.dib-wrap .dib{
+  font-size: 12px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align:top;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+  /* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
+  .dib-wrap{
+    letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
+  }
+}
+.dib {
+  display: inline-block;
+  *display:inline;
+  *zoom:1;
+}

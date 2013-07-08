@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Snippet</title>
+  <link rel="stylesheet" href="snippet.css">
+</head>
+<body>
+  <div class="wrapper">
+    <article class="clearfix">
+      <h2>inline-block</h2>
+      <div class="left">
+        <pre>
+.dib-wrap {
+  font-size:0;/* 所有浏览器 */
+  *word-spacing:-1px;/* IE6、7 */
+}
+.dib-wrap .dib{
+  font-size: 12px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align:top;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+  /* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
+  .dib-wrap{
+    letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
+  }
+}
+.dib {
+  display: inline-block;
+  *display:inline;
+  *zoom:1;
+}
+        </pre>
+        <p>参考《<a href="http://ued.taobao.com/blog/2012/08/inline-block/" target="_blank" title="inline-block 前世今生">inline-block 前世今生</a>》</p>
+      </div>
+      <div class="right">
+        <style>
+          .dib { border: #ccc solid 1px; background-color: #eee; padding: 5px; }
+        </style>
+        <ul class="dib-wrap">
+          <li class="dib">Home</li>
+          <li class="dib">Blog</li>
+          <li class="dib">BBS</li>
+          <li class="dib">About</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
