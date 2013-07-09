@@ -36,6 +36,13 @@ article p {
   font-size: 14px;
   line-height: 1.6;
 }
+article pre {
+  background-color: #333;
+  border: #ddd solid 2px;
+  color: #fff;
+  font: 14px/1.5 monospace;
+  padding: 10px;
+}
 /* snippet ------------------------------------------------------------------ */
 /* clearfix */
 .clearfix:before, .clearfix:after {
@@ -69,4 +76,134 @@ article p {
   display: inline-block;
   *display:inline;
   *zoom:1;
+}
+/* no pic technique */
+.arrow-top {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 10px;
+  border-color: #fff #fff #000 #fff;
+}
+.arrow-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 10px;
+  border-color: #fff #fff #fff #000;
+}
+.arrow-bottom {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 10px;
+  border-color: #000 #fff #fff #fff;
+}
+.arrow-left {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 10px;
+  border-color: #fff #000 #fff #fff;
+}
+
+.arrow-normal {
+  display: inline-block;
+  width: 7px;
+  height: 4px;
+  _height: 5px;
+  margin: 0 0 0 5px;
+  overflow: hidden;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 12px;
+  line-height: 12px\0;
+}
+.arrow-normal em {
+  display: block;
+  font-style: normal;
+  font-family: "SimSun";
+  margin: -7px 0 0 -2px;
+  _margin: -21px 0 0 -2px;
+}
+.arrow-turn em {
+  margin: 0 0 0 -2px;
+  _margin: -13px 0 0 -2px;
+}
+
+.arrow, .arrow s {
+  position: absolute;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  border: dashed 4px;
+}
+.arrow-lthin, .arrow-lthin s {
+  border-color: transparent #666 transparent transparent;
+  border-right-style: solid;
+}
+.arrow-rthin, .arrow-rthin s {
+  border-color: transparent transparent transparent #666;
+  border-left-style: solid;
+}
+.arrow-lthin s {
+  border-right-color: #fff;
+  right: -6px;
+  top: -4px;
+}
+.arrow-rthin s {
+  border-left-color: #FAFAFA;
+  left: -6px;
+  top: -4px;
+}
+
+.dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  font-size: 36px;
+  color: #cbcbcb;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bubble {
+  position: relative;
+  display: inline-block;
+  width: 78px;
+  padding: 5px;
+  word-break: break-all;
+  border: 1px solid #fec3a8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+}
+.bubble b, .bubble i {
+  position: absolute;
+  left: 37px;
+  width: 18px;
+  height: 7px;
+  font: 16px/21px Simsun;
+  overflow: hidden;
+}
+.bubble b {
+  top: -8px;
+  color: #fec3a8;
+}
+.bubble i {
+  top: -7px;
+  color: #fff;
+}
+.bubble em {
+  font-style: normal;
 }

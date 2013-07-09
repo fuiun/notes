@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Snippet</title>
+  <link rel="stylesheet" href="snippet.css">
+</head>
+<body>
+  <div class="wrapper">
+    <article class="clearfix">
+      <h2>CSS无图片技术 · border箭头</h2>
+      <div class="left">
+        <pre>
+.arrow-top {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 10px;
+  border-color: #fff #fff #000 #fff;
+}
+.arrow-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 10px;
+  border-color: #fff #fff #fff #000;
+}
+.arrow-bottom {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 10px;
+  border-color: #000 #fff #fff #fff;
+}
+.arrow-left {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 10px;
+  border-color: #fff #000 #fff #fff;
+}
+        </pre>
+        <p>参考《<a href="http://udc.weibo.com/2013/05/%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8Bcss%E6%97%A0%E5%9B%BE%E7%89%87%E6%8A%80%E6%9C%AF/" target="_blank" title="网站性能优化之CSS无图片技术">网站性能优化之CSS无图片技术</a>》</p>
+      </div>
+      <div class="right">
+        <s class="arrow-top"></s>
+        <s class="arrow-right"></s>
+        <s class="arrow-bottom"></s>
+        <s class="arrow-left"></s>
+      </div>
+    </article>
+
+    <article class="clearfix">
+      <h2>CSS无图片技术 · 字符箭头</h2>
+      <div class="left">
+        <pre>
+.arrow-normal {
+  display: inline-block;
+  width: 7px;
+  height: 4px;
+  _height: 5px;
+  margin: 0 0 0 5px;
+  overflow: hidden;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 12px;
+  line-height: 12px\0;
+}
+.arrow-normal em {
+  display: block;
+  font-style: normal;
+  font-family: "SimSun";
+  margin: -7px 0 0 -2px;
+  _margin: -21px 0 0 -2px;
+}
+.arrow-turn em {
+  margin: 0 0 0 -2px;
+  _margin: -13px 0 0 -2px;
+}
+        </pre>
+        <p>参考《<a href="http://udc.weibo.com/2013/05/%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8Bcss%E6%97%A0%E5%9B%BE%E7%89%87%E6%8A%80%E6%9C%AF/" target="_blank" title="网站性能优化之CSS无图片技术">网站性能优化之CSS无图片技术</a>》</p>
+      </div>
+      <div class="right">
+        <span class="arrow-normal"><em>◆</em></span>
+        <span class="arrow-normal arrow-turn"><em>◆</em></span>
+      </div>
+    </article>
+
+    <article class="clearfix">
+      <h2>CSS无图片技术 · 字符箭头</h2>
+      <div class="left">
+        <pre>
+.arrow, .arrow s {
+  position: absolute;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  border: dashed 4px;
+}
+.arrow-lthin, .arrow-lthin s {
+  border-color: transparent #666 transparent transparent;
+  border-right-style: solid;
+}
+.arrow-rthin, .arrow-rthin s {
+  border-color: transparent transparent transparent #666;
+  border-left-style: solid;
+}
+.arrow-lthin s {
+  border-right-color: #fff;
+  right: -6px;
+  top: -4px;
+}
+.arrow-rthin s {
+  border-left-color: #FAFAFA;
+  left: -6px;
+  top: -4px;
+}
+        </pre>
+        <p>参考《<a href="http://www.taobao.com/" target="_blank" title="淘宝网">淘宝网</a>》</p>
+      </div>
+      <div class="right">
+        <s class="arrow arrow-lthin"><s></s></s>
+        <s class="arrow arrow-rthin"><s></s></s>
+      </div>
+    </article>
+
+    <article class="clearfix">
+      <h2>CSS无图片技术 · 字符圆点</h2>
+      <div class="left">
+        <pre>
+.dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  font-size: 36px;
+  color: #cbcbcb;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+        </pre>
+        <p>参考《<a href="http://udc.weibo.com/2013/05/%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8Bcss%E6%97%A0%E5%9B%BE%E7%89%87%E6%8A%80%E6%9C%AF/" target="_blank" title="网站性能优化之CSS无图片技术">网站性能优化之CSS无图片技术</a>》</p>
+      </div>
+      <div class="right">
+        <a class="dot" onclick="return false;" href="javascript:;">•</a>
+      </div>
+    </article>
+
+    <article class="clearfix">
+      <h2>CSS无图片技术 · 气泡</h2>
+      <div class="left">
+        <pre>
+.bubble {
+  position: relative;
+  display: inline-block;
+  width: 78px;
+  padding: 5px;
+  word-break: break-all;
+  border: 1px solid #fec3a8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+}
+.bubble b, .bubble i {
+  position: absolute;
+  left: 37px;
+  width: 18px;
+  height: 7px;
+  font: 16px/21px Simsun;
+  overflow: hidden;
+}
+.bubble b {
+  top: -8px;
+  color: #fec3a8;
+}
+.bubble i {
+  top: -7px;
+  color: #fff;
+}
+.bubble em {
+  font-style: normal;
+}
+        </pre>
+        <p>参考《<a href="http://udc.weibo.com/2013/05/%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8Bcss%E6%97%A0%E5%9B%BE%E7%89%87%E6%8A%80%E6%9C%AF/" target="_blank" title="网站性能优化之CSS无图片技术">网站性能优化之CSS无图片技术</a>》</p>
+      </div>
+      <div class="right">
+        <span class="bubble">
+          <b>◆</b>
+          <i>◆</i>
+          <em>走起！夏日海滩趴！</em>
+        </span>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
