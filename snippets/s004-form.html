@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Snippet</title>
+  <link rel="stylesheet" href="snippet.css">
+  <script type="text/javascript">
+    function selectAll() {
+      var items = document.getElementsByName('name1');
+      var handle = document.getElementById('selectAll');
+      if(handle.checked) {
+        var i = 0;
+        while(i<items.length) {
+          items[i].checked = true;
+          i++;
+        }
+      } else {
+        var i = 0;
+        while(i<items.length) {
+          items[i].checked = false;
+          i++;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <article class="clearfix">
+      <h2>模拟下拉框</h2>
+      <div class="left">
+        <pre>
+&lt;script type="text/javascript"&gt;
+  function selectAll() {
+    var items = document.getElementsByName('name1');
+    var handle = document.getElementById('selectAll');
+    if(handle.checked) {
+      var i = 0;
+      while(i&lt;items.length) {
+        items[i].checked = true;
+        i++;
+      }
+    } else {
+      var i = 0;
+      while(i&lt;items.length) {
+        items[i].checked = false;
+        i++;
+      }
+    }
+  }
+&lt;/script&gt;
+        </pre>
+      </div>
+      <div class="right">
+        <p><input type="checkbox" name="selectAll" id="selectAll" onchange="selectAll();"> <label for=selectAll>全选</label></p>
+        <p><input type="checkbox" name="name1" value="value1">选项1</p>
+        <p><input type="checkbox" name="name1" value="value2">选项2</p>
+        <p><input type="checkbox" name="name1" value="value3">选项3</p>
+        <p><input type="checkbox" name="name1" value="value4">选项4</p>
+        <p><input type="checkbox" name="name1" value="value5">选项5</p>
+      </div>
+    </article>
+
+    <article class="clearfix">
+      <h2>单选按钮模拟下拉框</h2>
+      <div class="left">
+        <pre>
+.dropdown { position: relative; width: 110px; top: 40%; left: 50%; margin: -14px 0 0 -55px; }
+.dd-selected { position: relative; z-index: 10; height: 26px; line-height: 26px; background-color: #414a58; border: #252a31 solid 1px; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.1) inset; color: #efefef; font-size: 12px; font-weight: bold; text-indent: 10px; }
+.dd-selected:after { position: absolute; top: 12px; right: 10px; content: ''; width: 0; height: 0; font-size: 0; border: solid 4px; border-color: #fff transparent transparent transparent ; }
+.dd-menu { background-color: #262b31; border: #1e2127 solid 1px; border-radius: 0 0 3px 3px; box-shadow: 0 1px 2px rgba(0,0,0,.2); margin-top: -1px; }
+.dd-menu label { display: block; height: 25px; line-height: 25px; color: #acb3bf; font-size: 12px; text-indent: 10px; }
+.dd-menu label:hover { background-color: #4e85c5; color: #fff; }
+.dd-menu, input[type="radio"] { display: none; }
+.dropdown:hover .dd-menu { display: block; }
+        </pre>
+      </div>
+      <div class="right">
+        <div class="dropdown">
+          <div class="dd-selected">地点</div>
+          <div class="dd-menu">
+            <label for="opt01">北京</label> <input type="radio" name="location" id="opt01" value="01">
+            <label for="opt02">上海</label> <input type="radio" name="location" id="opt02" value="02">
+            <label for="opt03">北京</label> <input type="radio" name="location" id="opt03" value="03">
+          </div>
+        </div>
+    </article>
+  </div>
+</body>
+</html>
