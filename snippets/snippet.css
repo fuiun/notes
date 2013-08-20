@@ -12,6 +12,7 @@ h1, h2, h3 {
   padding: 50px 15%;
 }
 article {
+  display: block;
   background-color: #fff;
   padding: 20px;
   margin-bottom: 40px;
@@ -265,4 +266,11 @@ article pre {
 }
 .dropdown:hover .dd-menu {
   display: block;
+}
+/* Opacity */
+.opacity {
+  filter:alpha(opacity=60);
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
 }
