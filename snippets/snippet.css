@@ -9,7 +9,7 @@ h1, h2, h3 {
 }
 .wrapper {
   min-width: 600px;
-  padding: 50px 15%;
+  padding: 50px 5%;
 }
 article {
   display: block;
@@ -44,6 +44,26 @@ article pre {
   font: 14px/1.5 monospace;
   padding: 10px;
   overflow-x: auto;
+}
+article dt {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+article dd {
+  margin-bottom: 1em;
+}
+article dd table {
+  font-size: 75%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1em;
+}
+article dd table th, article dd table td {
+  border: #ccc dotted 1px;
+  padding: 5px;
+}
+article dd table th {
+  text-align: left;
 }
 /* snippet ------------------------------------------------------------------ */
 /* clearfix */

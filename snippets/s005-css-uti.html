@@ -8,7 +8,7 @@
 <body>
   <div class="wrapper">
     <article class="clearfix">
-      <h2>Opacity</h2>
+      <h2>opacity</h2>
       <div class="left">
         <pre>
 .opacity {
@@ -24,6 +24,51 @@
         <div class="opacity" style="width: 100px; height: 100px; background: red; text-align: center; line-height: 100px;">
           <span style="position: relative;">文字</span>
         </div>
+      </div>
+    </article>
+
+    <article class="clearfix">
+      <h2>换行</h2>
+      <div class="left">
+        <dl>
+          <dt>word-break</dt>
+          <dd>
+            <h4>语法</h4>
+            <pre>normal | break-all | keep-all</pre>
+            <table width="100%">
+              <tr>
+                <th>normal</th><td>使用浏览器默认的换行规则。</td>
+              </tr>
+              <tr>
+                <th>break-all</th><td>允许在单词内换行。</td>
+              </tr>
+              <tr>
+                <th>keep-all</th><td>只能在半角空格或连字符处换行。</td>
+              </tr>
+            </table>
+          </dd>
+          <dt>word-wrap</dt>
+          <dd>
+            <h4>语法</h4>
+            <pre>normal | break-word</pre>
+            <table width="100%">
+              <tr>
+                <th>normal</th><td>只在允许的断字点换行（浏览器保持默认处理）。</td>
+              </tr>
+              <tr>
+                <th>break-word</th><td>在长单词或 URL 地址内部进行换行。</td>
+              </tr>
+            </table>
+          </dd>
+        </dl>
+        <p>参考《<a href="http://www.w3school.com.cn/css" target="_blank" title="W3School">W3School</a>》</p>
+      </div>
+      <div class="right">
+        <div style="width:50%; word-break:break-all; word-wrap:break-word; border: #ccc solid 1px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed vestibulum metus.</div>
+
+        <div style="width:50%; word-wrap:break-word; border: #ccc solid 1px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed vestibulum metus.</div>
+
+        <div style="width:50%; word-break:break-all; border: #ccc solid 1px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed vestibulum metus.</div>
       </div>
     </article>
 
